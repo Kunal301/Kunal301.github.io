@@ -1,0 +1,486 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0px;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+}
+
+/* navigation bar logo and image */
+
+.item {
+  font-weight: bold;
+}
+#logo {
+  margin: 10px;
+}
+#logo img {
+  height: 50px;
+  margin: 2px 3px;
+}
+#logo img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* navigation bar list styling */
+
+#navbar ul {
+  display: flex;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+#navbar ul li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 12px 34px;
+  border-radius: 20px;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.container {
+  position: relative;
+  left: 841px;
+}
+.container1 {
+  position: relative;
+  left: 820px;
+}
+
+/* home section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  background: url("../food.jpg") no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.89;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 642px;
+  width: 100%;
+}
+
+#home h1 {
+  color: white;
+  text-align: center;
+}
+
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  margin-top: 42px;
+
+  font-size: 1.4rem;
+  border-radius: 10px;
+}
+.btn:hover
+{
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+
+/* concept section */
+
+.concept
+
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: url("../sushireal.webp");
+    height: 750px;
+
+
+}
+.concept1
+{
+    
+    width: 750px;
+    height: 470px;
+    margin-top: 125px; 
+    margin-right:  91px;
+    background-color: rgba(243, 239, 239, 0.5);
+    
+
+}
+.concept h2
+{
+    font-family: futura-lt-w01-book,sans-serif;
+    font-size: 4.3rem;
+}
+
+.concept p
+{
+    text-align: center;
+    font-size: 2.3em;
+}
+
+/* Menu Section */
+
+#menu-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 680px;
+
+}
+#menu-container::before
+{
+  content: '';
+  background: url("../menu.webp") no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 681px;
+  z-index: -1;
+  
+}
+
+#menu-container h1
+{
+    font-size: 5.6rem;
+    font-family: 'bree-serif',Arial, Helvetica, sans-serif;
+    
+    
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+#menu .box {
+  margin: 10px;
+  padding: 12px;
+  border-radius: 23px;
+  width: 400px;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); 
+}
+
+.more
+{
+  display: flex;
+align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: 32px;
+}
+
+#option1
+{
+  background-color: cyan;
+  width: 300px;
+  height: 50px;
+  padding-top: 22px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-radius: 10px;
+
+  
+}
+#option1:hover
+{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#menu .box img {
+  height: 160px;
+  display: block;
+  margin: auto;
+
+
+}
+.box-img
+{
+color: black;
+text-decoration: none;
+}
+#menu .box img:hover
+{
+  opacity: 0.6;
+  cursor: pointer;
+}
+#box3 img {
+  width: 256px;
+}
+
+#box h1 {
+  font-size: 1.9rem;
+}
+
+#menu p {
+  text-align: center;
+}
+
+/* Client Section */
+
+#clients
+{
+  position: relative;
+}
+#clients h1
+{
+  font-size: 5.3rem;
+  margin-left: 42px;
+}
+#clients::before
+{
+  content: '';
+  background: url('../clients.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height:104%;
+  z-index: -1;
+  opacity: 0.75;
+}
+#clients-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 24px;
+
+}
+
+#clients img
+{
+  height: 150px;
+  margin: 0px 42px;
+  margin-bottom: 82px;
+
+}
+#clients img:hover
+{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* Order Section */
+
+#order
+{
+  height: 700px;
+  background-color: black;
+color: white;
+}
+#order1
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 42px;
+}
+
+.take
+{
+  display: flex;
+align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#option
+{
+  background-color: brown;
+  width: 300px;
+  height: 50px;
+  padding-top: 22px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-radius: 10px;
+  
+}
+
+#option:hover
+{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#order h1
+{
+  font-family: futura-lt-w01-book,sans-serif;
+  font-size: 3.3rem;
+  padding-top: 52px;
+}
+#order h2
+{
+  margin-top: 44px;
+  font-family: futura-lt-w01-book,sans-serif;
+  font-size: 2.3rem;
+}
+
+#order img
+{
+  height: 250px;
+width:400px;
+padding: 12px;
+cursor: pointer;
+
+}
+#order img:hover
+{
+  
+cursor: pointer;
+opacity: 0.6;
+
+}
+
+#eatsure
+{
+  width: 250px;
+  height: 200px;
+}
+
+/* Contact Section */
+
+#contact
+{
+  position: relative;
+  height: 750px;
+}
+
+#contact::before
+{
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url("../contact.jpg") no-repeat center center/cover;
+}
+#contact-box
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+#contact-box form
+{
+  width: 40%;
+}
+#contact-box label
+{
+  font-size: 1.3rem;
+  
+}
+
+#contact-box input,
+#contact-box textarea
+{
+  width: 100%;
+  padding: 0.5rem 0rem;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  border: 1px solid black;
+  
+
+}
+#field
+{
+  box-sizing: border-box;
+  padding: 10px 30px;
+  margin: 22px;
+}
+
+#legend
+{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+/* footer section */
+footer
+{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;
+ font-size: 1.3rem;
+ font-weight: bold;
+   
+  
+}
+footer::before
+{
+  content: ' ';
+  background: url("https://static.wixstatic.com/media/90e93e_b77662fbdfb04017bffec8f8ed073784~mv2.jpg/v1/fill/w_1899,h_99,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/90e93e_b77662fbdfb04017bffec8f8ed073784~mv2.jpg");
+  width: 100%;
+  height: 10%;
+  z-index: -1;
+  position: absolute;
+
+}
+/* Utility classes */
+
+.h-primary {
+  font-size: 2.9rem;
+  padding: 12px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.h-secondary {
+  font-size: 1.9rem;
+  padding: 12px;
+  font-family: "Times New Roman", Times, serif;
+}
+.center {
+  text-align: center;
+}
+
+
+
