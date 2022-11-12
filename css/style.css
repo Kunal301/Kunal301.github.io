@@ -1,3 +1,4 @@
+@media screen and (min-width: 600px) {
 /* CSS Reset */
 * {
   margin: 0;
@@ -541,9 +542,9 @@ footer::before
 .center {
   text-align: center;
 }
+}
 
-
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 600px) {
   /* Navigation Section */
 #navbar
 {
@@ -619,10 +620,9 @@ footer::before
 
 /* Concept section */
 
-.concept
-{
-    margin-top: 3px;
-    height: 625px;
+.concept {
+  margin-top: 21px;
+  height: 470px;
 }
 .concept p
 {
@@ -631,10 +631,14 @@ footer::before
 }
 .concept1
 {
-    width: 750px;
+    /* width: 750px;
     height: 345px;
     margin-top: 28%;
-    margin-left: 13%;
+    margin-left: 13%; */
+    width: 391px;
+    height: 292px;
+    margin-top: 100px;
+   margin-right: 0px;
  
     
 }
@@ -739,4 +743,6 @@ height: 1140px;
 /* Footer section */
 
 }
+
+
 
