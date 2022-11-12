@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+
 /* CSS Reset */
 * {
   margin: 0;
@@ -542,9 +542,9 @@ footer::before
 .center {
   text-align: center;
 }
-}
 
-@media screen and (max-width: 600px) {
+
+@media (min-width: 0px) and (max-width: 600px) {
   /* Navigation Section */
 #navbar
 {
