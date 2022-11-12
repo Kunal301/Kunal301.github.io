@@ -4,6 +4,9 @@
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 
 #navbar {
@@ -11,6 +14,8 @@
   align-items: center;
   position: relative;
   top: 0px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
 }
 
 #navbar::before {
@@ -27,9 +32,7 @@
 
 /* navigation bar logo and image */
 
-.item {
-  font-weight: bold;
-}
+
 #logo {
   margin: 10px;
 }
@@ -49,7 +52,7 @@
 }
 #navbar ul li {
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 #navbar ul li a {
   color: white;
@@ -63,13 +66,48 @@
   background-color: white;
 }
 
-.container {
-  position: relative;
-  left: 841px;
+.contain
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:  "Nunito";
 }
+.contain a
+{
+  text-decoration: none;
+  color: white;
+}
+
+.container:hover,
+.container1:hover
+{
+  background-image: linear-gradient(to top, #ff2908 0%, #ed400b 100%);
+  transition: 0.2s;
+
+}
+
+
+.container {
+  padding: 8px 20px;
+  background-color: black;
+  margin: 17px;
+  margin-top: 42px;
+list-style: none;
+  font-size: 1.4rem;
+  border-radius: 4px;
+}
+
+
+
 .container1 {
-  position: relative;
-  left: 820px;
+  padding: 8px 20px;
+  background-color: black;
+  margin: 17px;
+  margin-top: 42px;
+  list-style: none;
+  border-radius: 4px;
+  font-size: 1.4rem;
 }
 
 /* home section */
@@ -111,15 +149,17 @@
   background-color: brown;
   color: white;
   margin: 17px;
-  margin-top: 42px;
-
+  margin-top: 22px;
+opacity: 0.7;
   font-size: 1.4rem;
   border-radius: 10px;
 }
 .btn:hover
 {
   cursor: pointer;
-  opacity: 0.85;
+  opacity: 1.6;
+  
+
 }
 
 
@@ -212,17 +252,22 @@ align-items: center;
   text-align: center;
   position: relative;
   top: 32px;
+  
 }
 
 #option1
 {
   background-color: cyan;
+  border-radius: 4px;
+  color: #fff;
+  background: #4154f1;
+  box-shadow: 0px 5px 25px rgb(65 84 241 / 40%);
   width: 300px;
-  height: 50px;
+  height: 65px;
   padding-top: 22px;
   font-size: 1.3rem;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family:  "Nunito", sans-serif;
   border-radius: 10px;
 
   
@@ -230,7 +275,8 @@ align-items: center;
 #option1:hover
 {
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.9;
+  transition: 0.3s;
 }
 
 #menu .box img {
@@ -247,8 +293,10 @@ text-decoration: none;
 }
 #menu .box img:hover
 {
-  opacity: 0.6;
+  opacity: 0.8;
   cursor: pointer;
+  transition: 0.4s;
+
 }
 #box3 img {
   width: 256px;
@@ -301,8 +349,10 @@ text-decoration: none;
 }
 #clients img:hover
 {
-  opacity: 0.7;
+  opacity: 0.8;
   cursor: pointer;
+  transition: 0.4s;
+
 }
 
 /* Order Section */
@@ -330,9 +380,10 @@ align-items: center;
 }
 #option
 {
-  background-color: brown;
+  background: #4154f1;
+  box-shadow: 0px 5px 25px rgb( 256 256 256 / 30%);
   width: 300px;
-  height: 50px;
+  height: 65px;
   padding-top: 22px;
   font-size: 1.3rem;
   font-weight: bold;
@@ -344,7 +395,8 @@ align-items: center;
 #option:hover
 {
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.9;
+  transition: 0.3s;
 }
 
 #order h1
@@ -373,6 +425,8 @@ cursor: pointer;
   
 cursor: pointer;
 opacity: 0.6;
+transition: 0.4s;
+
 
 }
 
@@ -411,6 +465,7 @@ opacity: 0.6;
 #contact-box form
 {
   width: 40%;
+ 
 }
 #contact-box label
 {
@@ -435,6 +490,11 @@ opacity: 0.6;
   box-sizing: border-box;
   padding: 10px 30px;
   margin: 22px;
+  background: #E0EAFC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
 }
 
 #legend
