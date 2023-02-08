@@ -8,8 +8,22 @@
 * {
   box-sizing: border-box;
 }
-
-
+.role{
+  max-width: 280px;
+  margin-bottom:-300px;
+  margin-top: -150px;
+  position: relative;
+  z-index: 1;
+  float: left;
+}
+.role1{
+  max-width: 280px;
+  margin-bottom:-300px;
+  margin-top: -150px;
+  position: relative;
+  z-index: 1;
+  float: right;
+}
 #navbar {
   display: flex;
   align-items: center;
